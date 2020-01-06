@@ -8,9 +8,9 @@ I used Java to solve the problem.
 ## Solved Problem
 - 2019.06.20  
 [backjoon_11718(Print)](https://www.acmicpc.net/problem/11718)   
-[backjoon_11060(Jump Jump)](https://www.acmicpc.net/problem/11060)  
-Solution1 : Use java util Scanner   
-Solution2 : I think it greedy  
+[Solution](backjoon_11718/src/backjoon_11718/Main.java) : Use java util Scanner  
+[backjoon_11060(Jump Jump)](https://www.acmicpc.net/problem/11060)     
+[Solution] : I think it greedy  
 These problems were easy, but worth considering.  
 
 - 2019.06.23  
