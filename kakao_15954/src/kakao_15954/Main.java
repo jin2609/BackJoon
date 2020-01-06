@@ -1,46 +1,46 @@
 package kakao_15954;
 
 import java.util.Scanner;
-/*¹®Á¦ ÀÌÇØ
- * NÁ¾·ùÀÇ ÀÎÇü ÆÇ¸Å (1 <= N <= 500)
- * N°³ÀÇ ÀÎÇü ¹èÄ¡ ÈÄ K°³ ¿¬´Ş¾Æ »ÌÀ½( 1 <= K <= N )
- * ÀÌ ¶§, ¼±È£µµÀÇ Ç¥ÁØÆíÂ÷°¡ ÃÖ¼Ò°¡ µÇ´Â Ç¥ÁØÆíÂ÷ Ãâ·Â
- * *Æò±Õ = »ê¼ú Æò±Õ
- * *ºĞ»ê = ((a^1-m)^2 + (a^2-m)^2 + (a^3-m)^2 + ... + (a^n-m)^2)/n 
+/*ë¬¸ì œ ì´í•´
+ * Nì¢…ë¥˜ì˜ ì¸í˜• íŒë§¤ (1 <= N <= 500)
+ * Nê°œì˜ ì¸í˜• ë°°ì¹˜ í›„ Kê°œ ì—°ë‹¬ì•„ ë½‘ìŒ( 1 <= K <= N )
+ * ì´ ë•Œ, ì„ í˜¸ë„ì˜ í‘œì¤€í¸ì°¨ê°€ ìµœì†Œê°€ ë˜ëŠ” í‘œì¤€í¸ì°¨ ì¶œë ¥
+ * *í‰ê·  = ì‚°ìˆ  í‰ê· 
+ * *ë¶„ì‚° = ((a^1-m)^2 + (a^2-m)^2 + (a^3-m)^2 + ... + (a^n-m)^2)/n 
  * */
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		//ÀÔ·Â
+		//ì…ë ¥
 		int N = sc.nextInt(); 
 		int K = sc.nextInt();
-		int[] preper = new int[N]; //¼±È£µµ Á¤º¸
+		int[] preper = new int[N]; //ì„ í˜¸ë„ ì •ë³´
 		
-		for(int i = 0; i < N; i ++) { //¼±È£µµ
+		for(int i = 0; i < N; i ++) { //ì„ í˜¸ë„
 			preper[i] = sc.nextInt();
 		}
 		
-		/*Ç¥ÁØÆíÂ÷ ÃÖ¼Ò°ª ±¸ÇÏ±â*/
+		/*í‘œì¤€í¸ì°¨ ìµœì†Œê°’ êµ¬í•˜ê¸°*/
 		double min = Integer.MAX_VALUE;
 		for(int i = 0; i < (N-K+1); i ++) {
-			/*Æò±Õ*/
+			/*í‰ê· */
 			double mean = 0;
 			for(int j = i; j < i+K; j++) {
 				mean = mean + (double)preper[j];
 			}
 			mean /= K;
 
-			/*ºĞ»ê*/
+			/*ë¶„ì‚°*/
 			double cov = 0;
 			for(int j = i; j < i+K; j++) {
 				cov += (preper[j]-mean)*(preper[j]-mean);
 			}
+
 			cov /= K;
-			
-			//Ç¥ÁØÆíÂ÷ ÃÖ¼Ò°ª Ã£±â
+			//í‘œì¤€í¸ì°¨ ìµœì†Œê°’ ì°¾ê¸°
 			if(min > cov)
 				min = cov;
 		}
-		System.out.println(Math.sqrt(min));
+		System.out.printf("%.11f",Math.sqrt(min));
 	}
 }
