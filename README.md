@@ -23,11 +23,11 @@ You can enter the problem and solution just click.
   - I realized that I am weak at the number of occasions.. lololo...
 
 ### 2019.08.26   
-- [kakao_15953(Prize Money Hunter](https://www.acmicpc.net/problem/15953)  
+- [kakao_15953(Prize Money Hunter)](https://www.acmicpc.net/problem/15953)  
   - [Solution](kakao_15953/src/kakao_15953/Main.java) : Use equal order & an even order sequence  
   - I can solve it with simple thoughts and songs.  
 
 ### 2020.01.06
-- [kakao_15954(Dolls)](](https://www.acmicpc.net/problem/15984))  
+- [kakao_15954(Dolls)](https://www.acmicpc.net/problem/15984)  
   - [Solution](kakao_15954/src/kakao_15954/Main.java) : Use nested for statements  
   - This problem was very interesting. I realized I had to read the problem well, and once again I could think about scope.  
