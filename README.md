@@ -10,9 +10,9 @@ You can enter the problem and solution just click.
 ------------------------------------------------------------------
 ## Solved Problem
 ### 2019.06.20  
-#### [backjoon_11718(Print)](https://www.acmicpc.net/problem/11718)   
-- [Solution](backjoon_11718/src/backjoon_11718/Main.java) : Use java util Scanner  
-- I could learn about Scanner skill.  
+- [backjoon_11718(Print)](https://www.acmicpc.net/problem/11718)   
+  - [Solution](backjoon_11718/src/backjoon_11718/Main.java) : Use java util Scanner  
+  - I could learn about Scanner skill.  
 #### [backjoon_11060(Jump Jump)](https://www.acmicpc.net/problem/11060)  
 - [Solution](backjoon_11060/src/backjoon_11060/Main.java) : I think it greedy  
 - This problems were easy, but worth considering.  
