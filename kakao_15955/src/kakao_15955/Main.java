@@ -7,29 +7,72 @@ package kakao_15955;
  * 체크포인트에 도달하면 충전을 하거나 HP를 X만큼 회복하는 둘중에 한가지 방법을 사용할 수 있음
  * HP를 소모하면 그 거리만큼 갈 수 있음
  * 부스터는 x축 혹은 y축으로 한방향으로만 이동가능
- *
+ * 각각의 체크포인트에서 최대 한번만 재 충전 가능
  * */
 
 import java.util.Scanner;
 
 public class Main {
+	private static boolean find = false;
+	
 	public static void main(String[] args) {
 		//입력
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt(); //체크포인트 수
 		int Q = sc.nextInt(); //질의의 수
-		
-		int[][] point = new int[2][N]; //체크포인트
+
+		double[][] point = new double[2][N]; //체크포인트
 		for(int i = 0; i < N; i ++) {
-			point[0][i] = sc.nextInt();
-			point[1][i] = sc.nextInt();
+			point[0][i] = sc.nextDouble();
+			point[1][i] = sc.nextDouble();
 		}
-		int[][] question = new int[3][Q]; //질의
+
+
+		//output
 		for(int i = 0; i < Q; i++) {
-			question[0][i] = sc.nextInt();
-			question[1][i] = sc.nextInt();
-			question[2][i] = sc.nextInt();
+			boolean[] visit = new boolean[N];
+			find = false;
+			recursiveMove(point,visit,sc.nextInt(),sc.nextInt(),sc.nextInt());
+			if(!find)
+				System.out.println("NO");
 		}
+	}
+
+	public static void recursiveMove(double[][] point,boolean[] visit, int start, int finish, int life) {
+		visit[start-1] = true;
+		
+		if(start == finish) { //갈 수 있다면
+			System.out.println("YES");
+			find = true;
+			return;
+		}
+		if(life != 0) { // life가 0이 아닌경우
+			for(int i = 0; i < point[0].length; i++) {
+				if(find)
+					break;
+				if(visit[i]) //만약 자기 자신의 좌표인 경우나 방문을 한 경우라면
+					continue;
+				Double distance = findDistance(point[0][start-1],point[1][start-1],point[0][i],point[1][i]); //최단거리를
+				if(distance <= life) {
+					recursiveMove(point,visit,i+1,finish,life);
+				}
+			}
+		}
+		else {
+			for(int i = 0; i < point[0].length; i++) {
+				if(find)
+					break;
+				if(visit[i]) //만약 자기 자신의 좌표인 경우나 방문을 한 경우라면
+					continue;
+				if((point[0][start-1] == point[0][i]) || (point[1][start-1] == point[1][i])) {
+					recursiveMove(point,visit,i+1,finish,life);
+				}
+			}
+		}
+	}
+	
+	private static double findDistance(double ax, double ay, double bx, double by) {
+		return Math.abs(ax-bx) > Math.abs(ay-by) ? Math.abs(ax-bx) : Math.abs(ay-by);
 	}
 
 }
