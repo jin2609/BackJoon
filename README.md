@@ -34,5 +34,5 @@ You can enter the problem and solution just click.
 ------------------------------------------------------------------------
 ## Abandoned Problem  
 ### 2020.1.17  
-### [kakao_15955(Booster)](https://www.acmicpc.net/problem/15985)  
+### [kakao_15955(Booster)](https://www.acmicpc.net/problem/15955)  
 - I think, now I can't solve it. I need to study more. First, I tried greedy solution and DP but I can get timeout and Memory overrun. Second, I tried dijkstra but the results were the same. lastly, I tried disjoint-set but I can see timeout..
