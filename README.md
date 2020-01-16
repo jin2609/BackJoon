@@ -31,3 +31,8 @@ You can enter the problem and solution just click.
 #### [kakao_15954(Dolls)](https://www.acmicpc.net/problem/15984)  
 - [Solution](kakao_15954/src/kakao_15954/Main.java) : Use nested for statements  
 - This problem was very interesting. I realized I had to read the problem well, and once again I could think about scope.  
+------------------------------------------------------------------------
+## Abandoned Problem  
+### 2020.1.17  
+### [kakao_15955(Booster)](https://www.acmicpc.net/problem/15985)  
+- I think, now I can't solve it. I need to study more. First, I tried greedy solution and DP but I can get timeout and Memory overrun. Second, I tried dijkstra but the results were the same. lastly, I tried disjoint-set but I can see timeout..

@@ -16,6 +16,8 @@ import java.util.Scanner;
  * */
 // Disjoint-Set
 public class Main{
+	static int[] parent;
+	static int[] rank;
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -41,27 +43,58 @@ public class Main{
 			}
 		});
 		
-		//union find
 		
-		
-		
+
+		double distance;
+		parent = new int[N+1];
+		rank = new int[N+1];
+		for(int i = 1; i < N+1; i ++)
+			parent[i] = i;
+
+		for(int i = 0; i < quest.length; i ++) {
+			int j;
+			for(j = 0; j < N; j ++) {
+				if(find(quest[i][0]) == find(quest[i][1])) {
+					break;
+				}
+				distance = findDistance(point[j][0],point[j][1], point[quest[i][0]-1][0],point[quest[i][0]-1][1]);
+				if(distance <= quest[i][2] && (find(quest[i][0]) != find(j+1)))
+					Union(j+1,quest[i][0]);
+				if(find(quest[i][0]) == find(j+1)) {
+					distance = findDistance(point[j][0],point[j][1], point[quest[i][1]-1][0],point[quest[i][1]-1][1]);
+					if(distance <= quest[i][2])
+						Union(j+1,quest[i][1]);
+				}
+			}
+			if(find(quest[i][0]) == find(quest[i][1]))
+				System.out.println("YES");
+			else
+				System.out.println("NO");
+			
+		}
 	}
 	
-	public static void Union(int p, int q) {
-		
+	public static void Union(int p,int q) {
+		int set1 = find(p);
+		int set2 = find(q);
+		if(rank[set1] < rank[set2]) {
+			parent[set1] = set2;
+		}
+		else {
+			parent[set2] = set1;
+		}
+		if(rank[set1] == rank[set2])
+			rank[set1]++;
 	}
 	
 	public static int find(int p) {
-		
+		if(parent[p] == p)
+			return p;
+		else
+			return parent[p] = find(parent[p]);
 	}
 	
 	private static double findDistance(int ax, int ay, int bx, int by) {	
 		return Math.abs(ax-bx) < Math.abs(ay-by) ? Math.abs(ax-bx) : Math.abs(ay-by);
 	}
 }
-
-
-
-
-
-
