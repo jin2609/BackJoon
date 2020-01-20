@@ -2,6 +2,11 @@ package kakao_15955;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 /*
@@ -14,77 +19,87 @@ import java.util.Scanner;
  * 부스터는 x축 혹은 y축으로 한방향으로만 이동가능
  * 각각의 체크포인트에서 최대 한번만 재 충전 가능
  * */
-// Disjoint-Set
-public class Main{
+
+public class Main {
 	static int[] parent;
-	static int[] rank;
-	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int N =  sc.nextInt();
+		int N = sc.nextInt();
 		int Q = sc.nextInt();
 		
-		int[][] point = new int[N][2];
-		for(int i = 0; i < N ; i ++) {
-			point[i][0] = sc.nextInt();
-			point[i][1] = sc.nextInt();
+		Point[] point = new Point[N];
+		for(int i = 0 ; i < N ; i ++) {
+			point[i] = new Point(sc.nextInt(),sc.nextInt(),i+1);
 		}
-		
-		int[][] quest = new int[Q][3];
+	
+		Question[] question = new Question[Q];
 		for(int i = 0; i < Q; i++) {
-			quest[i][0] = sc.nextInt();
-			quest[i][1] = sc.nextInt();
-			quest[i][2] = sc.nextInt();
+			question[i] = new Question(sc.nextInt(),sc.nextInt(),sc.nextInt(),i);
 		}
-		Arrays.sort(quest, new Comparator<int[]>() {
+		Arrays.sort(question, new Comparator<Question>() {
 			@Override
-			public int compare(int[] d1, int[] d2) {
-				return d1[2] - d2[2]; //오름차순 정렬
+			public int compare(Question d1, Question d2) {
+				return d1.life - d2.life; //오름차순 정렬
+			}
+		});
+		String[] solution = new String[Q];
+		
+		Pair[] pair = new Pair[2*N-2];
+		Arrays.sort(point, new Comparator<Point>() {
+			@Override
+			public int compare(Point p1, Point p2) {
+				return p1.x - p2.x; //오름차순 정렬
+			}
+		});
+		for(int i = 0; i < N-1; i ++) {
+			pair[2*i] = new Pair(point[i].num,point[i+1].num,(point[i+1].x-point[i].x));
+		}
+		Arrays.sort(point, new Comparator<Point>() {
+			@Override
+			public int compare(Point p1, Point p2) {
+				return p1.y - p2.y; //오름차순 정렬
+			}
+		});
+		for(int i =0; i < N-1; i ++) {
+			pair[2*i+1] = new Pair(point[i].num,point[i+1].num,(point[i+1].y-point[i].y));
+		}
+		Arrays.sort(pair, new Comparator<Pair>() {
+			@Override
+			public int compare(Pair p1, Pair p2) {
+				return p1.distance - p2.distance; //오름차순 정렬
 			}
 		});
 		
 		
-
-		double distance;
 		parent = new int[N+1];
-		rank = new int[N+1];
 		for(int i = 1; i < N+1; i ++)
 			parent[i] = i;
-
-		for(int i = 0; i < quest.length; i ++) {
-			int j;
-			for(j = 0; j < N; j ++) {
-				if(find(quest[i][0]) == find(quest[i][1])) {
-					break;
-				}
-				distance = findDistance(point[j][0],point[j][1], point[quest[i][0]-1][0],point[quest[i][0]-1][1]);
-				if(distance <= quest[i][2] && (find(quest[i][0]) != find(j+1)))
-					Union(j+1,quest[i][0]);
-				if(find(quest[i][0]) == find(j+1)) {
-					distance = findDistance(point[j][0],point[j][1], point[quest[i][1]-1][0],point[quest[i][1]-1][1]);
-					if(distance <= quest[i][2])
-						Union(j+1,quest[i][1]);
+		
+		int maxLife = -1; 
+		int j = 0;
+		for(int i = 0; i < Q; i ++) {
+			if(maxLife < question[i].life) {
+				maxLife = question[i].life;
+				for(; j < pair.length && pair[j].distance <= maxLife; j++) {
+					Union(pair[j].num1,pair[j].num2);
 				}
 			}
-			if(find(quest[i][0]) == find(quest[i][1]))
-				System.out.println("YES");
+			int start = find(question[i].start);
+			int finish = find(question[i].finish);
+			if(start == finish)
+				solution[question[i].num] = "YES";
 			else
-				System.out.println("NO");
-			
+				solution[question[i].num] = "NO";
 		}
+		
+		for(int i = 0; i < Q; i++)
+			System.out.println(solution[i]);
 	}
 	
 	public static void Union(int p,int q) {
 		int set1 = find(p);
 		int set2 = find(q);
-		if(rank[set1] < rank[set2]) {
-			parent[set1] = set2;
-		}
-		else {
-			parent[set2] = set1;
-		}
-		if(rank[set1] == rank[set2])
-			rank[set1]++;
+		parent[set1] = set2;
 	}
 	
 	public static int find(int p) {
@@ -94,7 +109,41 @@ public class Main{
 			return parent[p] = find(parent[p]);
 	}
 	
-	private static double findDistance(int ax, int ay, int bx, int by) {	
-		return Math.abs(ax-bx) < Math.abs(ay-by) ? Math.abs(ax-bx) : Math.abs(ay-by);
+	public static class Question{
+		int start;
+		int finish;
+		int life;
+		int num;
+		
+		public Question(int start, int finish, int life, int num) {
+			this.start = start;
+			this.finish = finish;
+			this.life = life;
+			this.num = num;
+		}
 	}
+	
+	public static class Point{
+		int x;
+		int y;
+		int num;
+		
+		public Point(int x, int y, int num) {
+			this.x = x;
+			this.y = y;
+			this.num = num;
+		}
+	}
+	public static class Pair{
+		int num1;
+		int num2;
+		int distance;
+		
+		public Pair(int n1, int n2, int dis) {
+			num1 = n1;
+			num2 = n2;
+			distance = dis;
+		}
+	}
+	
 }

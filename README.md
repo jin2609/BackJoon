@@ -32,7 +32,13 @@ You can enter the problem and solution just click.
 - [Solution](kakao_15954/src/kakao_15954/Main.java) : Use nested for statements  
 - This problem was very interesting. I realized I had to read the problem well, and once again I could think about scope.  
 ------------------------------------------------------------------------
-## Abandoned Problem  
 ### 2020.1.17  
-### [kakao_15955(Booster)](https://www.acmicpc.net/problem/15955)  
-- I think, now I can't solve it. I need to study more. First, I tried greedy solution and DP but I can get timeout and Memory overrun. Second, I tried dijkstra but the results were the same. lastly, I tried disjoint-set but I can see timeout..
+#### [kakao_15955(Booster)](https://www.acmicpc.net/problem/15955)★★★★★  
+- [Solution](kakao_15955/src/kakao_15955/Main.java) : USe disjoint-set  
+- I have used several methods to solve this problem.  
+First, I used dynamic programming and greedy method. But I can see timeout, and memory exceeded error. So, I think diffrents way that is dijkstra.
+Second, I used dijkstra algorithm. But the result was the same.  
+- This problem is quite difficult. I solved this problem using disjoint-set.  
+The disadvantage of disjoint-set is that it is difficult to separate groups. If life comes in ascending order, nothing happens to separate. So I made a class with an x coordinate, a y coordinate, and a problem number. Then, to receive the question, I made a class that has start point, finish point, life, and problem number. The questions were arranged in ascending order of life.  
+And whenever the value of life changed, it Added a set.  
+I defined a class called Pair to align the points with the x- and y-coordinates to form a pair and put them in an array. The class has the number and distance of points. If made that way, there will be a total of 2N-2 pairs. The pairs were arranged in ascending order. If so, there are many benefits of time-complexity because it is not necessary to look at pairs that are not required when life changes.
