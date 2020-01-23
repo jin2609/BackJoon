@@ -42,7 +42,7 @@ Second, I used dijkstra algorithm. But the result was the same.
 The disadvantage of disjoint-set is that it is difficult to separate groups. If life comes in ascending order, nothing happens to separate. So I made a class with an x coordinate, a y coordinate, and a problem number. Then, to receive the question, I made a class that has start point, finish point, life, and problem number. The questions were arranged in ascending order of life. And whenever the value of life changed, it Added a set.  
 I defined a class called Pair to align the points with the x- and y-coordinates to form a pair and put them in an array. The class has the number and distance of points. If made that way, there will be a total of 2N-2 pairs. The pairs were arranged in ascending order. If so, there are many benefits of time-complexity because it is not necessary to look at pairs that are not required when life changes.
 ------------------------------------------------------------------------
-### 2020.1.17  
-#### [kakao_15955(Booster)](https://www.acmicpc.net/problem/1018)  
+### 2020.1.24  
+#### [backjoon_1018(Re-painting the chessboard)](https://www.acmicpc.net/problem/1018)  
 - [Solution](backjoon_1018/src/backjoon_1018/Main.java) : Use for-statements  
 - This problem was difficult to understand. But I understand that it was easy to solve. I used iterative sentences to calculate a rectangle divided into eight squares. The color of the upper left column was divided into black and white to find the minimum value.
