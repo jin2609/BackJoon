@@ -34,7 +34,7 @@ You can enter the problem and solution just click.
 ------------------------------------------------------------------------
 ### 2020.1.17  
 #### [kakao_15955(Booster)](https://www.acmicpc.net/problem/15955)★★★★★  
-- [Solution](kakao_15955/src/kakao_15955/Main.java) : USe disjoint-set  
+- [Solution](kakao_15955/src/kakao_15955/Main.java) : Use disjoint-set  
 - I have used several methods to solve this problem.  
 First, I used dynamic programming and greedy method. But I can see timeout, and memory exceeded error. So, I think diffrents way that is dijkstra.
 Second, I used dijkstra algorithm. But the result was the same.  
@@ -45,4 +45,4 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
 ### 2020.1.24  
 #### [backjoon_1018(Re-painting the chessboard)](https://www.acmicpc.net/problem/1018)  
 - [Solution](backjoon_1018/src/backjoon_1018/Main.java) : Use for-statements  
-- This problem was difficult to understand. But I understand that it was easy to solve. I used iterative sentences to calculate a rectangle divided into eight squares. The color of the upper left column was divided into black and white to find the minimum value.
+- This problem was difficult to understand. But I understand that it was easy to solve. I used iterative sentences to calculate a rectangle divided into eight squares. The color of the upper left column was divided into black and white.
