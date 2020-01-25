@@ -46,3 +46,9 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
 #### [backjoon_1018(Re-painting the chessboard)](https://www.acmicpc.net/problem/1018)  
 - [Solution](backjoon_1018/src/backjoon_1018/Main.java) : Use for-statements  
 - This problem was difficult to understand. But I understand that it was easy to solve. I used iterative sentences to calculate a rectangle divided into eight squares. The color of the upper left column was divided into black and white.
+------------------------------------------------------------------------
+### 2020.1.25  
+####[backjoon_step1(print_Arithmetic)](https://www.acmicpc.net/step/1)
+- [Code](backjoon_step1/src/)  
+- I thought I should build up the foundation. So I solve the problem step by step.  
+- This step is about the output statement and Arithmetic. The problem was so easy that I didn't write down an explanation.
