@@ -54,4 +54,7 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
 - This step is about the output statement and Arithmetic. The problem was so easy that I didn't write down an explanation.
 #### [backjoon_step2(if)](https://www.acmicpc.net/step/4)
 - [Code](backjoon_step2/src/)  
-- This step is about conditional statements.
+- This step is about conditional statements.  
+####[backjoon_step3(for)](https://www.acmicpc.net/step/3)
+- [Code](backjoon_step3/src/)
+- This step is about for-statement.
