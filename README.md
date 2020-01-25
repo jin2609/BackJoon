@@ -58,3 +58,6 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
 #### [backjoon_step3(for)](https://www.acmicpc.net/step/3)
 - [Code](backjoon_step3/src/)
 - This step is about for-statement.
+#### [backjoon_step4(while)](https://www.acmicpc.net/step/2)
+- [Code](backjoon_step4/src/)
+- This step is about while-statement.
