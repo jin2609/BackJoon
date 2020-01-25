@@ -46,3 +46,4 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
 #### [kakao_15955(Booster)](https://www.acmicpc.net/problem/1018)  
 - [Solution](backjoon_1018/src/backjoon_1018/Main.java) : Use for-statements  
 - This problem was difficult to understand. But I understand that it was easy to solve. I used iterative sentences to calculate a rectangle divided into eight squares. The color of the upper left column was divided into black and white to find the minimum value.
+------------------------------------------------------------------------
