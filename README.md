@@ -79,10 +79,11 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
   
 ```java
 String test = "ABCDE";
-System.out.println(test.indexOf("A")) //0
-System.out.println(test.indexOf("B")) //1
-System.out.println(test.indexOf("BC")) //1
-System.out.println(test.indexOf("C")) //2
-System.out.println(test.indexOf("F")) //-1
+
+System.out.println(test.indexOf("A")); //0
+System.out.println(test.indexOf("B")); //1
+System.out.println(test.indexOf("BC")); //1
+System.out.println(test.indexOf("C")); //2
+System.out.println(test.indexOf("F")); //-1
 ```  
 if a string contains a character that is received as a parameter, return the start index of that character. If not, return -1.
