@@ -64,3 +64,10 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
 #### [backjoon_step5(array)](https://www.acmicpc.net/step/6)
 - [Code](backjoon_step5/src/)
 - This step is about array.
+------------------------------------------------------------------------
+### 2020.1.27  
+#### [backjoon_step6(function)](https://www.acmicpc.net/step/5)
+- [Code](backjoon_step6/src/)  
+- This step is about function.  
+- Question 1065 was quite interesting.  
+- I used DP to solve problem 4673.
