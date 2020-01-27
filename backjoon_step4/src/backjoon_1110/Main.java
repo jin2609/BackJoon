@@ -3,12 +3,12 @@ package backjoon_1110;
 import java.util.Scanner;
 
 // https://www.acmicpc.net/problem/1110
-/*¹®Á¦ÀÌÇØ
- * ´õÇÏ±â »çÀÌÅ¬
- * 0º¸´Ù Å©°Å³ª °°°í, 99º¸´Ù ÀÛ°Å³ª °°Àº Á¤¼ö°¡ ÁÖ¾îÁö¸é, ¿¬»ê ¼öÇà
- * 10º¸´Ù ÀÛ´Ù¸é 0À» ºÙ¿© µÎÀÚ¸®·Î ¸¸µê
- * µÎ ¼ö¸¦ ´õÇÏ°í, ¿ø·¡ ¼öÀÇ µÚ¿¡ ÀÌ¾îºÙÀÓ
- * ¾ó¸¸Å­ µ¹¾Æ¾ß °°Àº ¼ö ³ª¿À´Â Áö »çÀÌÅ¬ ¼ö Ãâ·Â
+/*ë¬¸ì œì´í•´
+ * ë”í•˜ê¸° ì‚¬ì´í´
+ * 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ê³ , 99ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì€ ì •ìˆ˜ê°€ ì£¼ì–´ì§€ë©´, ì—°ì‚° ìˆ˜í–‰
+ * 10ë³´ë‹¤ ìž‘ë‹¤ë©´ 0ì„ ë¶™ì—¬ ë‘ìžë¦¬ë¡œ ë§Œë“¦
+ * ë‘ ìˆ˜ë¥¼ ë”í•˜ê³ , ì›ëž˜ ìˆ˜ì˜ ë’¤ì— ì´ì–´ë¶™ìž„
+ * ì–¼ë§Œí¼ ëŒì•„ì•¼ ê°™ì€ ìˆ˜ ë‚˜ì˜¤ëŠ” ì§€ ì‚¬ì´í´ ìˆ˜ ì¶œë ¥
  * */
 public class Main {
 	public static void main(String[] args) {
