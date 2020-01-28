@@ -75,8 +75,8 @@ I defined a class called Pair to align the points with the x- and y-coordinates 
 #### [backjoon_step7(String)](https://www.acmicpc.net/step/7)
 - [Code](backjoon_step7/src/)  
 - This step is about string.  
-- As I solved the problem this time, there is a new String function. It is 'indexOf'. 
-  
+- As I solved the problem this time, there is a new String function. It is 'indexOf'.
+
 ```java
 String test = "ABCDE";
 
@@ -87,3 +87,18 @@ System.out.println(test.indexOf("C")); //2
 System.out.println(test.indexOf("F")); //-1
 ```  
 if a string contains a character that is received as a parameter, return the start index of that character. If not, return -1.
+
+------------------------------------------------------------------------
+### 2020.1.28
+#### [backjoon_1712(break-even point)](https://www.acmicpc.net/problem/1712)  
+- [Solution](backjoon_step8/src/backjoon_1712/Main.java)  
+- This is a question of finding break even point.
+
+#### [backjoon_2839(Sugar delivery)](https://www.acmicpc.net/problem/2839)  
+- [Solution](backjoon_step8/src/backjoon_2839/Main.java)  
+- It is a matter of carrying sugar in a minimum bag. Sugar is given in 3kg and 5kg bags.
+I asked for a case where I used as much 5kg sugar as I could.  
+
+#### [backjoon_2292(Honeycomb)](https://www.acmicpc.net/problem/2292)  
+- [Solution](backjoon_step8/src/backjoon_2292/Main.java)  
+- It is a matter of how many spaces from the center are to be found. The sequence of the steps was calculated and solved by calculating the sequence with a difference of six degrees.
