@@ -102,3 +102,9 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_2292(Honeycomb)](https://www.acmicpc.net/problem/2292)  
 - [Solution](backjoon_step8/src/backjoon_2292/Main.java)  
 - It is a matter of how many spaces from the center are to be found. The sequence of the steps was calculated and solved by calculating the sequence with a difference of six degrees.
+
+------------------------------------------------------------------------
+### 2020.1.29
+#### [backjoon_1193(find_fountain)](https://www.acmicpc.net/problem/1193)  
+- [Solution](backjoon_step8/src/backjoon_1193/Main.java)  
+- This is a question of finding fountain. I found the rules and solved them.
