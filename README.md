@@ -108,3 +108,7 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_1193(find_fountain)](https://www.acmicpc.net/problem/1193)  
 - [Solution](backjoon_step8/src/backjoon_1193/Main.java)  
 - This is a question of finding fountain. I found the rules and solved them.
+
+#### [backjoon_2869(climb_snail)](https://www.acmicpc.net/problem/2869)  
+- [Solution](backjoon_step8/src/backjoon_2869/Main.java)  
+- This problem is calculating when snails rise. Snails rise during the day and go down at night. When snail go to the top, you don't go down. I realized that I had to check the size of input in this matter.
