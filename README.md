@@ -118,3 +118,7 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_10250(ACM Hotel)](https://www.acmicpc.net/problem/10250)  
 - [Solution](backjoon_step8/src/backjoon_10250/Main.java)  
 - This question said to me, you should think about exception!! I just think.. it is so easy problem. I can solve it divided! But There was a trap.
+
+#### [backjoon_2775(number of residents)](https://www.acmicpc.net/problem/2775)  
+- [Solution](backjoon_step8/src/backjoon_2775/Main.java)  
+- I can solve this problem using recursion. The number of residents I want to find, is sum of the lower floor of the same room and previous room on the same floor. And first room's number of residents is 1 always.  
