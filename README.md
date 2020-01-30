@@ -112,3 +112,9 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_2869(climb_snail)](https://www.acmicpc.net/problem/2869)  
 - [Solution](backjoon_step8/src/backjoon_2869/Main.java)  
 - This problem is calculating when snails rise. Snails rise during the day and go down at night. When snail go to the top, you don't go down. I realized that I had to check the size of input in this matter.
+
+------------------------------------------------------------------------
+### 2020.1.30
+#### [backjoon_10250(ACM Hotel)](https://www.acmicpc.net/problem/10250)  
+- [Solution](backjoon_step8/src/backjoon_10250/Main.java)  
+- This question said to me, you should think about exception!! I just think.. it is so easy problem. I can solve it divided! But There was a trap.
