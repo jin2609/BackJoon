@@ -122,3 +122,13 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_2775(number of residents)](https://www.acmicpc.net/problem/2775)  
 - [Solution](backjoon_step8/src/backjoon_2775/Main.java)  
 - I can solve this problem using recursion. The number of residents I want to find, is sum of the lower floor of the same room and previous room on the same floor. And first room's number of residents is 1 always.  
+
+------------------------------------------------------------------------
+### 2020.1.31
+#### [backjoon_1011(Fly me to the Alpha Centauri)](https://www.acmicpc.net/problem/1011)  
+- [Solution](backjoon_step8/src/backjoon_1011/Main.java)  
+- This question is very hard to think.. I can get idea to solve problem by 1+2+3+...+n = (n*n-1)/2.
+
+#### [backjoon_1978(finding minority)](https://www.acmicpc.net/problem/1978)  
+- [Solution](backjoon_step9/src/backjoon_1978/Main.java)  
+- This question is finding minority. I can solve this problem using % operator.
