@@ -132,3 +132,11 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_1978(finding minority)](https://www.acmicpc.net/problem/1978)  
 - [Solution](backjoon_step9/src/backjoon_1978/Main.java)  
 - This question is finding minority. I can solve this problem using % operator.
+
+#### [backjoon_2581(minority)](https://www.acmicpc.net/problem/2581)  
+- [Solution](backjoon_step9/src/backjoon_2581/Main.java)  
+- This problem is to find a fraction of a given section and to obtain the sum and minimum value.
+
+#### [backjoon_1929(minority)](https://www.acmicpc.net/problem/1929)  
+- [Solution](backjoon_step9/src/backjoon_1929/Main.java)  
+- This problem is to find a fraction of a given section and to obtain prime number.
