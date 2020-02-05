@@ -140,3 +140,9 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_1929(minority)](https://www.acmicpc.net/problem/1929)  
 - [Solution](backjoon_step9/src/backjoon_1929/Main.java)  
 - This problem is to find a fraction of a given section and to obtain prime number.
+
+------------------------------------------------------------------------
+### 2020.2.5
+#### [backjoon_4948(Bertrand's postulate)](https://www.acmicpc.net/problem/4948)  
+- [Solution](backjoon_step9/src/backjoon_4948/Main.java)  
+- This problem is to find a number of minority.
