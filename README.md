@@ -146,3 +146,29 @@ I asked for a case where I used as much 5kg sugar as I could.
 #### [backjoon_4948(Bertrand's postulate)](https://www.acmicpc.net/problem/4948)  
 - [Solution](backjoon_step9/src/backjoon_4948/Main.java)  
 - This problem is to find a number of minority.
+
+------------------------------------------------------------------------
+### 2020.2.7
+#### [backjoon_9020(Goldbach's conjecture)](https://www.acmicpc.net/problem/9020)  
+- [Solution](backjoon_step9/src/backjoon_9020/Main.java)  
+
+#### [backjoon_1085(Rectangular escape)](https://www.acmicpc.net/problem/1085)  
+- [Solution](backjoon_step9/src/backjoon_1085/Main.java)  
+
+#### [backjoon_3009(Fourth point)](https://www.acmicpc.net/problem/3009)  
+- [Solution](backjoon_step9/src/backjoon_3009/Main.java)  
+
+#### [backjoon_4153(Right triangle)](https://www.acmicpc.net/problem/4153)  
+- [Solution](backjoon_step9/src/backjoon_4153/Main.java)  
+
+#### [backjoon_3053(Taxicab Geometry)](https://www.acmicpc.net/problem/3053)  
+- [Solution](backjoon_step9/src/backjoon_3053/Main.java)  
+
+#### [backjoon_10872(factorial)](https://www.acmicpc.net/problem/10872)  
+- [Solution](backjoon_step10/src/backjoon_10872/Main.java)  
+
+#### [backjoon_10870(Fibonacci)](https://www.acmicpc.net/problem/10870)  
+- [Solution](backjoon_step10/src/backjoon_10870/Main.java)  
+
+#### [backjoon_2447(star)](https://www.acmicpc.net/problem/2447)  
+- [Solution](backjoon_step10/src/backjoon_2447/Main.java)  
