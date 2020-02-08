@@ -172,3 +172,7 @@ I asked for a case where I used as much 5kg sugar as I could.
 
 #### [backjoon_2447(star)](https://www.acmicpc.net/problem/2447)  
 - [Solution](backjoon_step10/src/backjoon_2447/Main.java)  
+------------------------------------------------------------------------
+### 2020.2.8
+#### [backjoon_11729(Hanoi)](https://www.acmicpc.net/problem/11729)  
+- [Solution](backjoon_step9/src/backjoon_11729/Main.java)  
