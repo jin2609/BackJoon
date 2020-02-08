@@ -176,3 +176,12 @@ I asked for a case where I used as much 5kg sugar as I could.
 ### 2020.2.8
 #### [backjoon_11729(Hanoi)](https://www.acmicpc.net/problem/11729)  
 - [Solution](backjoon_step9/src/backjoon_11729/Main.java)  
+
+#### [backjoon_2798(Black jack)](https://www.acmicpc.net/problem/2798)  
+- [Solution](backjoon_step9/src/backjoon_2798/Main.java)  
+
+#### [backjoon_2231(Decomposition)](https://www.acmicpc.net/problem/2231)  
+- [Solution](backjoon_step9/src/backjoon_2231/Main.java)  
+
+#### [backjoon_7568(Body)](https://www.acmicpc.net/problem/7568)  
+- [Solution](backjoon_step9/src/backjoon_7568/Main.java)  
