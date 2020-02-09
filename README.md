@@ -175,13 +175,21 @@ I asked for a case where I used as much 5kg sugar as I could.
 ------------------------------------------------------------------------
 ### 2020.2.8
 #### [backjoon_11729(Hanoi)](https://www.acmicpc.net/problem/11729)  
-- [Solution](backjoon_step9/src/backjoon_11729/Main.java)  
+- [Solution](backjoon_step10/src/backjoon_11729/Main.java)  
 
 #### [backjoon_2798(Black jack)](https://www.acmicpc.net/problem/2798)  
-- [Solution](backjoon_step9/src/backjoon_2798/Main.java)  
-
-#### [backjoon_2231(Decomposition)](https://www.acmicpc.net/problem/2231)  
-- [Solution](backjoon_step9/src/backjoon_2231/Main.java)  
+- [Solution](backjoon_step11/src/backjoon_2798/Main.java)  
 
 #### [backjoon_7568(Body)](https://www.acmicpc.net/problem/7568)  
-- [Solution](backjoon_step9/src/backjoon_7568/Main.java)  
+- [Solution](backjoon_step11/src/backjoon_7568/Main.java)  
+
+#### [backjoon_2231(Decomposition)](https://www.acmicpc.net/problem/2231)  
+- [Solution](backjoon_step11/src/backjoon_2231/Main.java)  
+
+#### [backjoon_1436(Movie director)](https://www.acmicpc.net/problem/1436)  
+- [Solution](backjoon_step11/src/backjoon_1436/Main.java)
+
+------------------------------------------------------------------------
+### 2020.2.9
+#### [backjoon_2750(Sort_n^2)](https://www.acmicpc.net/problem/2750)  
+- [Solution](backjoon_step12/src/backjoon_2750/Main.java)  
