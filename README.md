@@ -193,3 +193,17 @@ I asked for a case where I used as much 5kg sugar as I could.
 ### 2020.2.9
 #### [backjoon_2750(Sort_n^2)](https://www.acmicpc.net/problem/2750)  
 - [Solution](backjoon_step12/src/backjoon_2750/Main.java)  
+
+------------------------------------------------------------------------
+### 2020.2.14
+#### [backjoon_2751(Sort_n*logn)](https://www.acmicpc.net/problem/2751)  
+- [Solution](backjoon_step12/src/backjoon_2751/Main.java)  
+
+#### [backjoon_10989(Sort)](https://www.acmicpc.net/problem/10989)  
+- [Solution](backjoon_step12/src/backjoon_10989/Main.java)  
+
+#### [backjoon_2108(statistics)](https://www.acmicpc.net/problem/2108)  
+- [Solution](backjoon_step12/src/backjoon_2108/Main.java)  
+
+#### [backjoon_1427(Sort Inside)](https://www.acmicpc.net/problem/1427)  
+- [Solution](backjoon_step12/src/backjoon_1427/Main.java)  
