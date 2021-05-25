@@ -2,6 +2,7 @@
 package problem_10757;
 import java.util.Scanner;
 
+//시간 초과
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
