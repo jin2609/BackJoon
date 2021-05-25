@@ -1,7 +1,7 @@
 package kakao_15956;
 
 import java.util.Scanner;
-
+// 미해결 감잡기중
 public class Main {
 	public static void main(String[] args) {
 		String input = new Scanner(System.in).next();
