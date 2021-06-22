@@ -240,3 +240,7 @@ I asked for a case where I used as much 5kg sugar as I could.
 
 #### [backjoon_2580(Sudoku)](https://www.acmicpc.net/problem/2580)  
 - [Solution](backjoon_step13/src/backjoon_2580/Main.java)  
+------------------------------------------------------------------------
+
+#### [backjoon_10757(Giant number)](https://www.acmicpc.net/problem/10757)  
+- [Solution](backjoon_step13/src/backjoon_10757/Main.java)  
